@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FA9606;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFB81C;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.menu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item {
+    background-color: #FFE7B7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.item h3 {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
