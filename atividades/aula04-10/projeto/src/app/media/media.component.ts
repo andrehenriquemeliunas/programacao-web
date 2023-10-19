@@ -19,8 +19,6 @@ export class MediaComponent {
 
 
   calcular(){
-
-
     this.resultado = formatNumber((this.ac1 * 0.15) + (this.ac2 * 0.30) + (this.ag * 0.10) + (this.af * 0.45),this.locale, '1.2-2');
   }
 }

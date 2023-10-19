@@ -11,6 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import { MediaComponent } from './media/media.component';
 import { LOCALE_ID } from '@angular/core';
+import { TelaPaiComponent } from './tela-pai/tela-pai.component';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { HomeComponent } from './home/home.component';
+import { TelaFilho1Component } from './tela-pai/tela-filho1/tela-filho1.component';
+import { TelaFilho2Component } from './tela-pai/tela-filho2/tela-filho2.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { LOCALE_ID } from '@angular/core';
     ListaClienteComponent,
     CalculadoraComponent,
     PaginaInicialComponent,
-    MediaComponent
+    MediaComponent,
+    TelaPaiComponent,
+    PaginaNaoEncontradaComponent,
+    HomeComponent,
+    TelaFilho1Component,
+    TelaFilho2Component
   ],
   imports: [
     BrowserModule,
