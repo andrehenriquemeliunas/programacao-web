@@ -2,12 +2,12 @@
     <h1>Calculadora</h1>
 
     <div class="col-md-3">
-        <label class="form-label">Num. 1</label>
+        <label class="form-label">Primeiro Número</label>
         <input [(ngModel)]="num1" type="number" class="form-control">
     </div>
 
     <div class="col-md-3">
-        <label class="form-label">Num. 2</label>
+        <label class="form-label">Segundo Número</label>
         <input [(ngModel)]="num2" type="number" class="form-control">
     </div>
 
@@ -21,11 +21,21 @@
         </select>
     </div>
 
-    <div class="col-md-1">
+    <div class="col-md-2">
         <button style="margin-top: 30px" class="btn btn-primary" (click)="calcular()">Calcular</button>
     </div>
 
-    <div class="col-md-3"><label class="form-label">Resultado</label>
+    <div class="col-md-8" style="margin-top: 30px">
+        <label class="form-label">Resultado</label>
         <input [(ngModel)]="resultado" type="number" class="form-control">
     </div>
 </div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+    <div class="col-md-8 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 André Meliunas | 211947 | Faculdade de Engenharia de Sorocaba</span>
+    </div>
+</footer>
