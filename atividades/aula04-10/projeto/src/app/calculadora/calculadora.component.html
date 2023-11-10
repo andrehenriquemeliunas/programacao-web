@@ -1,18 +1,21 @@
 <div class="row">
     <h1>Calculadora</h1>
 
+    <h6 style="margin-top: 30px;">Exercício:</h6>
+    <p style="margin-bottom: 30px;">Crie um componente que receberá dois números e a operação matemática (soma, subtração, multiplicação ou divisão). Exiba o resultado em um input.</p>
+
     <div class="col-md-3">
-        <label class="form-label">Primeiro Número</label>
+        <label class="form-label" style="font-weight: bold;">Primeiro Número</label>
         <input [(ngModel)]="num1" type="number" class="form-control">
     </div>
 
     <div class="col-md-3">
-        <label class="form-label">Segundo Número</label>
+        <label class="form-label" style="font-weight: bold;">Segundo Número</label>
         <input [(ngModel)]="num2" type="number" class="form-control">
     </div>
 
     <div class="col-md-2">
-        <label class="form-label">Operação</label>
+        <label class="form-label" style="font-weight: bold;">Operação</label>
         <select [(ngModel)]="operacao" class="form-select">
             <option value="+">Somar</option>
             <option value="-">Subtrair</option>
@@ -26,7 +29,7 @@
     </div>
 
     <div class="col-md-8" style="margin-top: 30px">
-        <label class="form-label">Resultado</label>
+        <label class="form-label" style="font-weight: bold;">Resultado</label>
         <input [(ngModel)]="resultado" type="number" class="form-control">
     </div>
 </div>

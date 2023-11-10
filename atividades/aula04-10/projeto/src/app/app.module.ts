@@ -19,6 +19,8 @@ import { TelaFilho2Component } from './tela-pai/tela-filho2/tela-filho2.componen
 import { UsuarioComponent } from './usuario/usuario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioDetalhesComponent } from './usuario/usuario-detalhes/usuario-detalhes.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { ApoliceComponent } from './apolice/apolice.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { UsuarioDetalhesComponent } from './usuario/usuario-detalhes/usuario-det
     TelaFilho1Component,
     TelaFilho2Component,
     UsuarioComponent,
-    UsuarioDetalhesComponent
+    UsuarioDetalhesComponent,
+    CadastroComponent,
+    ApoliceComponent
   ],
   imports: [
     BrowserModule,

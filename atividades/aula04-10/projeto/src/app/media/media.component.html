@@ -1,23 +1,26 @@
 <div class="row">
     <h1>Média do Aluno</h1>
 
+    <h6 style="margin-top: 30px;">Exercício:</h6>
+    <p style="margin-bottom: 30px;">Crie uma componente que receberá as notas: AC1, AC2, AG e AF.Calcule a média ao clicar no botão “Calcular” e mostre se está aprovado ou reprovado, a média é 5. Média Final = (AC1 * 0,15) + (AC2 *0,30) + (AG * 0,10) + (AF * 0,45)</p>
+
     <div class="col-md-2">
-        <label class="form-label">AC1</label>
+        <label class="form-label" style="font-weight: bold;">AC1</label>
         <input [(ngModel)]="ac1" type="number" class="form-control">
     </div>
 
     <div class="col-md-2">
-        <label class="form-label">AC2</label>
+        <label class="form-label" style="font-weight: bold;">AC2</label>
         <input [(ngModel)]="ac2" type="number" class="form-control">
     </div>
 
     <div class="col-md-2">
-        <label class="form-label">AG</label>
+        <label class="form-label" style="font-weight: bold;">AG</label>
         <input [(ngModel)]="ag" type="number" class="form-control">
     </div>
 
     <div class="col-md-2">
-        <label class="form-label">AF</label>
+        <label class="form-label" style="font-weight: bold;">AF</label>
         <input [(ngModel)]="af" type="number" class="form-control">
     </div>
 
@@ -26,7 +29,7 @@
         <button style="margin-top: 30px" class="btn btn-primary" (click)="calcular()">Calcular</button>
     </div>
 
-    <div class="col-md-8" style="margin-top: 30px"><label class="form-label">Resultado</label>
+    <div class="col-md-8" style="margin-top: 30px; font-weight: bold;"><label class="form-label" >Resultado</label>
         <input [(ngModel)]="resultado" type="number" class="form-control">
     </div>
 </div>

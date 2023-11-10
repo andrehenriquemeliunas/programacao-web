@@ -1,0 +1,51 @@
+<div class="row">
+    <h1>Apólice de Seguro</h1>
+
+    <h6 style="margin-top: 30px;">Exercício:</h6>
+    <p style="margin-bottom: 30px;">
+        Crie um formulário de apólice para seguro automobilístico. Para isso o consultor preencherá: Nome do segurado, o sexo, a idade e o valor do automóvel. Mediante a regra abaixo calcule e exiba o valor da apólice de seguro.
+    </p>
+
+    <div class="col-md-6">
+        <label class="form-label" style="font-weight: bold; ">Nome do segurado</label>
+        <input class="form-control" name="ra"  [(ngModel)]="nome" style="margin-bottom: 35px; width: 90%;" placeholder="Insira o nome" required/>
+
+        <label class="form-label" [(ngModel)]="idade" style="font-weight: bold;">Idade</label>
+        <input class="form-control" type="number" name="nome"  style="margin-bottom: 35px; width: 90%;" placeholder="Insira sua idade" required/>
+        
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" style="font-weight: bold;">Sexo</label>
+        <select  [(ngModel)]="sexo" style="width: 80%; margin-bottom: 35px;" class="form-select"   name="sexo">
+            <option value="" disabled selected >Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+    </select>
+
+    <label class="form-label" style="font-weight: bold;">Valor do Automóvel</label>
+    <input class="form-control" name="nome" type="number" [(ngModel)]="valorA" style="margin-bottom: 35px; width: 80%;" placeholder="Insira o valor" required/>
+    
+    </div>
+
+    <div class="col-md-6">
+        <div>
+        <label style="font-weight: bold;">Valor da Apólice</label>
+        <div>
+            <input style="margin-bottom: 35px; width: 90%;" [(ngModel)]="total"  type="number" class="form-control">
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <button class="btn btn-primary" style="width: 80%; margin-top: 25px;" type="submit" (click)="resultado()">Calcular</button>
+    </div>
+</div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+    <div class="col-md-8 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 André Meliunas | 211947 | Faculdade de Engenharia de Sorocaba</span>
+    </div>
+</footer>

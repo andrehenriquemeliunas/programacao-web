@@ -1,0 +1,34 @@
+<div class="row">
+    <h1>Cadastro de Aluno</h1>
+
+    <h6 style="margin-top: 30px;">Exercício:</h6>
+    <p style="margin-bottom: 30px;">Crie um componente com um formulário e os campos: RA, nome, email, celular. Todos os campos deverão ser obrigatórios e associados a um ngModel</p>
+
+    <div class="col-md-6">
+        <label class="form-label" style="font-weight: bold;">RA</label>
+        <input class="form-control" name="ra"  [(ngModel)]="ra" style="margin-bottom: 35px;" placeholder="Insira seu RA" required/>
+
+        <label class="form-label" style="font-weight: bold;">E-mail</label>
+        <input class="form-control" name="email" [(ngModel)]="email" style="margin-bottom: 35px;" placeholder="Insira seu e-mail" required/>
+        
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" style="font-weight: bold;">Nome</label>
+        <input class="form-control" name="nome" [(ngModel)]="nome" style="margin-bottom: 35px;" placeholder="Insira seu nome" required/>
+
+        <label class="form-label" style="font-weight: bold;">Celular</label>
+        <input class="form-control" name="celular"  [(ngModel)]="celular" style="margin-bottom: 35px;" placeholder="Insira seu celular" required/>
+    </div>
+    <div>
+        <button class="btn btn-primary" type="submit">Salvar</button>
+    </div>
+</div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+    <div class="col-md-8 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 André Meliunas | 211947 | Faculdade de Engenharia de Sorocaba</span>
+    </div>
+</footer>
